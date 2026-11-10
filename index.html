@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The Logical Marketer rebrand is coming soon. Get in touch about your website and local Google presence.">
+  <title>The rebrand is coming soon | Logical Marketer</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="coming-soon.css">
+  <script src="coming-soon.js" defer></script>
+</head>
+<body>
+  <main class="layout">
+    <section class="intro">
+      <img src="assets/images/logo.webp" width="1024" height="184" alt="Logical Marketer">
+      <h1>The rebrand is coming soon</h1>
+      <p>Over the past year, we’ve refined our process so we can build your website faster, give it a stronger foundation on Google, and make it easier for local customers to find you and reach out. See you on the new site soon.</p>
+    </section>
+    <section class="contact" aria-labelledby="contact-title">
+      <h2>Let’s talk</h2>
+      <form id="contact-form" action="https://form-relay.amir-eba.workers.dev/api/contact" method="post">
+        <label for="name">Your name</label>
+        <input id="name" name="name" autocomplete="name" maxlength="100" required>
+        <div class="contact-fields">
+          <div>
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" autocomplete="email" maxlength="254" required>
+          </div>
+          <div>
+            <label for="phone">Phone number <span>(optional)</span></label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" maxlength="40">
+          </div>
+        </div>
+        <label for="message">How can we help?</label>
+        <textarea id="message" name="message" rows="4" maxlength="1500" required></textarea>
+        <button type="submit">Reach out to us <span aria-hidden="true">↗</span></button>
+        <p id="contact-status" role="status" hidden></p>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
